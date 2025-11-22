@@ -48,6 +48,27 @@
             bindings = <&kp EQUAL &kp LS(I) &kp LS(F) &kp LPAR>;
             label = "NEW_MACRO";
         };
+
+        address: address {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp H &kp O &kp T &kp A &kp DOT &kp K &kp U &kp R &kp O &kp D &kp A &kp AT &kp P &kp R &kp O &kp S &kp U &kp S &kp DOT &kp C &kp O &kp DOT &kp J &kp P>;
+            label = "ADDRESS";
+        };
+
+        tax: tax {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp LS(G) &kp N6 &kp STAR &kp LPAR &kp N1 &kp PLUS &kp LS(K) &kp N6 &kp RPAR>;
+            label = "TAX";
+        };
+
+        yyyymmdd: yyyymmdd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp Y &kp Y &kp Y &kp FSLH &kp M &kp M &kp FSLH &kp D &kp D>;
+            label = "YYYYMMDD";
+        };
     };
 
     /* ============================================================
@@ -129,10 +150,10 @@
 
         ShortCut {
             bindings = <
-&kp LG(L)        &kp LEFT_GUI  &kp F4         &kp F5  &kp F8                         &kp LC(X)  &kp LC(F)  &kp LC(NUMBER_1)  &kp LC(PLUS)   &kp LC(UP)
-&kp LA(LC(DEL))  &kp LG(D)     &kp LG(LS(C))  &none   &none   &none       &XLOOKUP   &kp LC(C)  &kp LC(T)  &IF               &kp LS(LC(Q))  &kp LC(DOWN)
-&none            &none         &none          &none   &none   &none       &kp LC(Z)  &kp LC(V)  &none      &none             &none          &none
-&none            &trans        &trans         &trans  &trans  &trans      &trans     &trans                                                 &trans
+&kp LG(L)        &kp LEFT_GUI  &kp F4         &kp F5    &kp F8                           &kp LC(X)  &kp LC(F)  &kp LC(NUMBER_1)  &kp LC(PLUS)   &kp LC(UP)
+&kp LA(LC(DEL))  &kp LG(D)     &kp LG(LS(C))  &address  &address  &none       &XLOOKUP   &kp LC(C)  &kp LC(T)  &IF               &kp LS(LC(Q))  &kp LC(DOWN)
+&none            &yyyymmdd     &tax           &none     &none     &none       &kp LC(Z)  &kp LC(V)  &none      &none             &none          &none
+&none            &trans        &trans         &trans    &trans    &trans      &trans     &trans                                                 &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
