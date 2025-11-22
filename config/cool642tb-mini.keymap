@@ -14,6 +14,23 @@
 };
 
 / {
+    macros {
+        xlookup_macro: macro {
+            label = "XLOOKUP_MACRO";
+            bindings = <
+                &kp EQUAL       // =
+                &kp X
+                &kp L
+                &kp O
+                &kp O
+                &kp K
+                &kp U
+                &kp P
+                &kp LEFT_PAREN  // (
+            >;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
