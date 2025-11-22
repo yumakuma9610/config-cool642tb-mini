@@ -14,13 +14,16 @@
 };
 
 / {
+    /* ============================================================
+     * 1. macros（最優先で定義：Remap で認識される）
+     * ============================================================ */
     macros {
         compatible = "zmk,macros";
 
         xlookup_macro: macro {
             label = "XLOOKUP_MACRO";
             bindings = <
-                &kp EQUAL       // =
+                &kp EQUAL
                 &kp X
                 &kp L
                 &kp O
@@ -28,11 +31,27 @@
                 &kp K
                 &kp U
                 &kp P
-                &kp LS(N9)      // Shift+9 ＝ "("
+                &kp LS(N9)   /* "(" */
             >;
         };
     };
 
+    /* ============================================================
+     * 2. behaviors（macros の後に置く必須）
+     * ============================================================ */
+    behaviors {
+        encoder_msc_down_up: encoder_msc_down_up {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_MSC_DOWN_UP";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            tap-ms = <20>;
+        };
+    };
+
+    /* ============================================================
+     * 3. combos（behaviors の後ならどこでもOK）
+     * ============================================================ */
     combos {
         compatible = "zmk,combos";
 
@@ -47,20 +66,15 @@
         };
     };
 
-    behaviors {
-        encoder_msc_down_up: encoder_msc_down_up {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "ENCODER_MSC_DOWN_UP";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-
-            tap-ms = <20>;
-        };
-    };
-
+    /* ============================================================
+     * 4. keymap（最後でOK）
+     * ============================================================ */
     keymap {
         compatible = "zmk,keymap";
 
+        /* --------------------------
+         * LAYER 0
+         * -------------------------- */
         default_layer {
             bindings = <
 &kp G  &kp Z                    &kp D         &kp B      &kp P                                                &kp K        &kp N  &kp Y  &kp Q       &kp X
@@ -72,6 +86,9 @@
             sensor-bindings = <&encoder_msc_down_up>;
         };
 
+        /* --------------------------
+         * LAYER 1 (FUNCTION)
+         * -------------------------- */
         FUNCTION {
             bindings = <
 &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH                                     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS  &kp SLASH
@@ -81,6 +98,9 @@
             >;
         };
 
+        /* --------------------------
+         * LAYER 2 (NUM)
+         * -------------------------- */
         NUM {
             bindings = <
 &kp LS(EXCL)  &kp AT        &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)                              &kp CARET    &kp AMPERSAND  &kp LS(UNDER)  &kp TILDE     &kp MINUS
@@ -90,6 +110,9 @@
             >;
         };
 
+        /* --------------------------
+         * LAYER 3 (ARROW)
+         * -------------------------- */
         ARROW {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
@@ -101,6 +124,9 @@
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
+        /* --------------------------
+         * LAYER 4 (MOUSE)
+         * -------------------------- */
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans    &trans    &trans
@@ -110,6 +136,9 @@
             >;
         };
 
+        /* --------------------------
+         * LAYER 5 (SCROLL)
+         * -------------------------- */
         SCROLL {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
@@ -119,21 +148,22 @@
             >;
         };
 
+        /* layer 6 & 7 はそのまま */
         layer_6 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans  &trans &trans &trans          &trans
             >;
         };
 
         layer_7 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans  &trans &trans &trans          &trans
             >;
         };
     };
