@@ -35,13 +35,6 @@
             >;
         };
 
-        XLOOKUP: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp EQUAL &kp LS(X) &kp LS(L) &kp LS(O) &kp LS(O) &kp LS(K) &kp LS(U) &kp LS(P) &kp LPAR>;
-            label = "NEW_MACRO";
-        };
-
         IF: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -68,6 +61,13 @@
             #binding-cells = <0>;
             bindings = <&kp Y &kp Y &kp Y &kp Y &kp FSLH &kp M &kp M &kp FSLH &kp D &kp D>;
             label = "YYYYMMDD";
+        };
+
+        XLUP: XLUP {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp EQUAL &kp LS(X) &kp LS(L) &kp LS(O) &kp LS(O) &kp LS(K) &kp LS(U) &kp LS(P) &kp LPAR>;
+            label = "XLUP";
         };
     };
 
@@ -151,7 +151,7 @@
         ShortCut {
             bindings = <
 &kp LG(L)        &kp LEFT_GUI  &kp F4         &kp F5  &kp F8                           &kp LC(X)  &kp LC(F)  &kp LC(NUMBER_1)  &kp LC(PLUS)   &kp LC(UP)
-&kp LA(LC(DEL))  &kp LG(D)     &kp LG(LS(C))  &none   &address  &none       &XLOOKUP   &kp LC(C)  &kp LC(T)  &IF               &kp LS(LC(Q))  &kp LC(DOWN)
+&kp LA(LC(DEL))  &kp LG(D)     &kp LG(LS(C))  &none   &address  &none       &XLUP      &kp LC(C)  &kp LC(T)  &IF               &kp LS(LC(Q))  &kp LC(DOWN)
 &none            &yyyymmdd     &tax           &none   &none     &none       &kp LC(Z)  &kp LC(V)  &none      &none             &none          &none
 &none            &trans        &trans         &trans  &trans    &trans      &trans     &trans                                                 &trans
             >;
