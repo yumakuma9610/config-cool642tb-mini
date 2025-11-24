@@ -129,10 +129,10 @@
 
         number {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERIOD                                    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS  &kp SLASH
-&kp BACKSLASH    &kp MINUS          &kp EQUAL             &kp AT_SIGN            &kp COMMA     &none            &kp BACKSPACE  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS   &kp ASTERISK
-&none            &kp SQT            &kp AMPERSAND         &kp COLON              &kp QUESTION  &kp PERCENT      &tog 0         &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp HASH   &kp COMMA
-&trans           &trans             &trans                &trans                 &trans        &trans           &kp KP_DOT     &kp KP_NUMBER_0                                               &kp KP_ENTER
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERIOD                                    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &kp KP_SLASH
+&kp BACKSLASH    &kp MINUS          &kp EQUAL             &kp AT_SIGN            &kp COMMA     &none            &kp BACKSPACE  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp KP_ASTERISK
+&none            &kp SQT            &kp AMPERSAND         &kp COLON              &kp QUESTION  &kp PERCENT      &tog 0         &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp HASH      &kp KP_COMMA
+&trans           &trans             &trans                &trans                 &trans        &trans           &kp KP_DOT     &kp KP_NUMBER_0                                                  &kp KP_ENTER
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -140,10 +140,10 @@
 
         ShortCut {
             bindings = <
-&kp LG(L)        &kp F4     &kp F5         &kp F8  &kp F10                          &kp LC(X)  &kp LC(F)  &kp LC(NUMBER_1)  &kp LC(PLUS)   &kp LC(UP)
-&kp LA(LC(DEL))  &kp LG(D)  &kp LG(LS(C))  &none   &address  &none       &XLUP      &kp LC(C)  &kp LC(T)  &IF               &kp LC(LA(Q))  &kp LC(DOWN)
-&kp LEFT_GUI     &yyyymmdd  &tax           &kp X   &none     &none       &kp LC(Z)  &kp LC(V)  &none      &none             &none          &none
-&none            &trans     &trans         &trans  &trans    &trans      &trans     &trans                                                 &bt BT_CLR
+&kp LG(L)        &kp F4     &kp F5         &kp F8  &kp F10                       &kp LC(F)  &kp LC(X)  &kp LC(NUMBER_1)  &kp LC(PLUS)   &kp LC(UP)
+&kp LA(LC(DEL))  &kp LG(D)  &kp LG(LS(C))  &none   &address  &none       &XLUP   &kp LC(T)  &kp LC(C)  &IF               &kp LC(LA(Q))  &kp LC(DOWN)
+&kp LEFT_GUI     &yyyymmdd  &tax           &kp X   &none     &none       &none   &kp LC(Z)  &kp LC(V)  &none             &none          &none
+&none            &trans     &trans         &trans  &trans    &trans      &trans  &trans                                                 &bt BT_CLR
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
