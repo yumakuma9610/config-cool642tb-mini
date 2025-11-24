@@ -140,10 +140,10 @@
 
         ShortCut {
             bindings = <
-&kp LG(L)        &kp LEFT_GUI  &kp F4         &kp F5  &kp F8                           &kp LC(X)  &kp LC(F)  &kp LC(NUMBER_1)  &kp LC(PLUS)   &kp LC(UP)
-&kp LA(LC(DEL))  &kp LG(D)     &kp LG(LS(C))  &none   &address  &none       &XLUP      &kp LC(C)  &kp LC(T)  &IF               &kp LC(LA(Q))  &kp LC(DOWN)
-&none            &yyyymmdd     &tax           &kp X   &none     &none       &kp LC(Z)  &kp LC(V)  &none      &none             &none          &none
-&none            &trans        &trans         &trans  &trans    &trans      &trans     &trans                                                 &bt BT_CLR
+&kp LG(L)        &kp F4     &kp F5         &kp F8  &kp F10                          &kp LC(X)  &kp LC(F)  &kp LC(NUMBER_1)  &kp LC(PLUS)   &kp LC(UP)
+&kp LA(LC(DEL))  &kp LG(D)  &kp LG(LS(C))  &none   &address  &none       &XLUP      &kp LC(C)  &kp LC(T)  &IF               &kp LC(LA(Q))  &kp LC(DOWN)
+&kp LEFT_GUI     &yyyymmdd  &tax           &kp X   &none     &none       &kp LC(Z)  &kp LC(V)  &none      &none             &none          &none
+&none            &trans     &trans         &trans  &trans    &trans      &trans     &trans                                                 &bt BT_CLR
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
