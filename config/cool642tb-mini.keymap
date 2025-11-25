@@ -121,7 +121,7 @@
 &kp G  &kp Z  &kp D         &kp B      &kp P                                      &kp K        &kp N  &kp Y     &kp RIGHT   &kp UP
 &kp A  &kp I  &kp U         &kp E      &kp O        &none          &kp ESCAPE     &kp S        &kp H  &mkp MB1  &kp F2      &kp DOWN_ARROW
 &kp C  &kp F  &kp J         &kp L      &kp MINUS    &kp CAPS       &kp TAB        &kp T        &kp M  &kp W     &kp DELETE  &mkp MB4
-&kp V  &kp Q  &kp LEFT_ALT  &kp LSHFT  &lt 1 SPACE  &kp LCTRL      &kp BACKSPACE  &lt 2 ENTER                               &kp KP_NUMLOCK
+&kp V  &kp Q  &kp LEFT_ALT  &kp LSHFT  &lt 1 SPACE  &kp LCTRL      &kp BACKSPACE  &lt 2 ENTER                               &lt 3 KP_NUMLOCK
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -129,10 +129,10 @@
 
         number {
             bindings = <
-&kp EXCLAMATION  &kp LS(DOUBLE_QUOTES)  &kp LS(N8)     &kp LS(N9)        &kp PERIOD                                 &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &kp KP_SLASH
-&kp SLASH        &kp MINUS              &kp LS(MINUS)  &kp LS(N2)        &kp COMMA     &none            &kp HASH    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp KP_ASTERISK
-&kp BACKSLASH    &kp SEMICOLON          &kp AMPERSAND  &kp SINGLE_QUOTE  &kp QUESTION  &kp PERCENT      &kp KP_DOT  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans        &kp KP_COMMA
-&trans           &trans                 &trans         &trans            &trans        &trans           &trans      &kp KP_NUMBER_0                                                  &kp KP_ENTER
+&kp EXCLAMATION  &kp LS(NUMBER_2)  &kp LS(N8)     &kp LS(N9)        &kp PERIOD                                 &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &kp KP_SLASH
+&kp SLASH        &kp MINUS         &kp LS(MINUS)  &kp LS(N2)        &kp COMMA     &none            &kp HASH    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp KP_ASTERISK
+&kp BACKSLASH    &kp SEMICOLON     &kp AMPERSAND  &kp SINGLE_QUOTE  &kp QUESTION  &kp PERCENT      &kp KP_DOT  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans        &kp KP_COMMA
+&trans           &trans            &trans         &trans            &trans        &trans           &trans      &kp KP_NUMBER_0                                                  &kp KP_ENTER
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -143,7 +143,7 @@
 &kp LG(L)        &kp F4     &kp F5         &kp F8    &kp F10                       &kp LC(F)  &kp LC(X)  &kp LC(NUMBER_1)  &kp LC(PLUS)   &kp LC(UP)
 &kp LA(LC(DEL))  &kp LG(D)  &kp LG(LS(C))  &kp LGUI  &address  &none       &XLUP   &kp LC(T)  &kp LC(C)  &IF               &kp LC(LA(Q))  &kp LC(DOWN)
 &none            &yyyymmdd  &tax           &kp X     &none     &none       &none   &kp LC(Z)  &kp LC(V)  &none             &none          &none
-&mo 3            &trans     &trans         &trans    &trans    &trans      &trans  &trans                                                 &none
+&none            &trans     &trans         &trans    &trans    &trans      &trans  &trans                                                 &none
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -151,10 +151,10 @@
 
         ARROW {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &bt BT_CLR
+&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                          &kp LS(NUMBER_6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)
+&trans            &trans            &trans            &trans            &trans      &trans      &bt BT_CLR  &trans            &trans      &trans      &trans      &trans
+&trans            &trans            &trans            &trans            &trans      &trans      &trans      &trans            &trans      &trans      &trans      &trans
+&trans            &trans            &trans            &trans            &trans      &trans      &trans      &trans                                                &none
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
