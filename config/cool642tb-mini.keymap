@@ -46,7 +46,7 @@
         address: address {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp S &kp H &kp O &kp T &kp A &kp DOT &kp K &kp U &kp R &kp O &kp D &kp A &kp RIGHT_BRACKET &kp P &kp R &kp O &kp S &kp U &kp S &kp DOT &kp C &kp O &kp DOT &kp J &kp P>;
+            bindings = <&kp S &kp H &kp O &kp T &kp A &kp DOT &kp K &kp U &kp R &kp O &kp D &kp A &kp LEFT_BRACKET &kp P &kp R &kp O &kp S &kp U &kp S &kp DOT &kp C &kp O &kp DOT &kp J &kp P>;
             label = "ADDRESS";
         };
 
