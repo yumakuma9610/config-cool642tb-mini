@@ -129,10 +129,10 @@
 
         number {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERIOD                                    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &kp KP_SLASH
-&kp SLASH        &kp MINUS          &kp LS(EQUAL)         &kp AT                 &kp COMMA     &none            &kp BACKSPACE  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp KP_ASTERISK
-&kp BACKSLASH    &kp SQT            &kp AMPERSAND         &kp COLON              &kp QUESTION  &kp PERCENT      &tog 0         &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp HASH      &kp KP_COMMA
-&trans           &trans             &trans                &trans                 &trans        &trans           &kp KP_DOT     &kp KP_NUMBER_0                                                  &kp KP_ENTER
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp LS(N8)     &kp LS(N9)        &kp PERIOD                                 &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &kp KP_SLASH
+&kp SLASH        &kp MINUS          &kp KP_EQUAL   &kp LS(NUMBER_2)  &kp COMMA     &none            &kp HASH    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp KP_ASTERISK
+&kp BACKSLASH    &kp SQT            &kp AMPERSAND  &kp COLON         &kp QUESTION  &kp PERCENT      &kp KP_DOT  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans        &kp KP_COMMA
+&trans           &trans             &trans         &trans            &trans        &trans           &trans      &kp KP_NUMBER_0                                                  &kp KP_ENTER
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
