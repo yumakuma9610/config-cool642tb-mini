@@ -130,8 +130,8 @@
         number {
             bindings = <
 &kp EXCLAMATION  &kp LS(NUMBER_2)  &kp LS(N8)        &kp LS(N9)        &kp PERIOD                                 &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &kp KP_SLASH
-&kp SLASH        &kp MINUS         &kp LS(MINUS)     &kp GRAVE         &kp COMMA     &none            &kp HASH    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp KP_ASTERISK
-&kp BACKSLASH    &kp SEMICOLON     &kp LS(NUMBER_6)  &kp SINGLE_QUOTE  &kp QUESTION  &kp PERCENT      &kp KP_DOT  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans        &kp KP_COMMA
+&kp SLASH        &kp MINUS         &kp LS(MINUS)     &kp LEFT_BRACKET  &kp COMMA     &none            &kp HASH    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp KP_ASTERISK
+&kp LESS_THAN    &kp GREATER_THAN  &kp LS(NUMBER_6)  &kp SINGLE_QUOTE  &kp QUESTION  &kp PERCENT      &kp KP_DOT  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans        &kp KP_COMMA
 &trans           &trans            &trans            &trans            &trans        &trans           &trans      &kp KP_NUMBER_0                                                  &kp KP_ENTER
             >;
 
@@ -151,10 +151,10 @@
 
         ARROW {
             bindings = <
-&kp LS(MINUS)  &kp CARET  &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET                          &kp ASTERISK  &kp PLUS  &kp GREATER_THAN  &kp LESS_THAN  &kp DOUBLE_QUOTES
-&trans         &trans     &trans         &trans            &trans             &trans      &bt BT_CLR  &trans        &trans    &trans            &trans         &trans
-&trans         &trans     &trans         &trans            &trans             &trans      &trans      &trans        &trans    &trans            &trans         &trans
-&trans         &trans     &trans         &trans            &trans             &trans      &trans      &trans                                                   &none
+&trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &bt BT_CLR  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans                          &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
