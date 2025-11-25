@@ -39,7 +39,7 @@
         IF: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp EQUAL &kp LS(I) &kp LS(F) &kp LPAR>;
+            bindings = <&kp LS(MINUS) &kp LS(I) &kp LS(F) &kp LS(N8)>;
             label = "NEW_MACRO";
         };
 
@@ -53,7 +53,7 @@
         tax: tax {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp EQUAL &kp LS(G) &kp N6 &kp STAR &kp LPAR &kp N1 &kp PLUS &kp LS(K) &kp N6 &kp RPAR>;
+            bindings = <&kp LS(MINUS) &kp G &kp N6 &kp STAR &kp LS(N8) &kp N1 &kp PLUS &kp K &kp N6 &kp LS(N9)>;
             label = "TAX";
         };
 
@@ -67,7 +67,7 @@
         XLUP: XLUP {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp EQUAL &kp LS(X) &kp LS(L) &kp LS(O) &kp LS(O) &kp LS(K) &kp LS(U) &kp LS(P) &kp LPAR>;
+            bindings = <&kp LS(MINUS) &kp LS(X) &kp LS(L) &kp LS(O) &kp LS(O) &kp LS(K) &kp LS(U) &kp LS(P) &kp LS(N8)>;
             label = "XLUP";
         };
     };
@@ -129,10 +129,10 @@
 
         number {
             bindings = <
-&kp EXCLAMATION  &kp LS(NUMBER_2)  &kp LS(N8)     &kp LS(N9)        &kp PERIOD                                 &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &kp KP_SLASH
-&kp SLASH        &kp MINUS         &kp LS(MINUS)  &kp LS(N2)        &kp COMMA     &none            &kp HASH    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp KP_ASTERISK
-&kp BACKSLASH    &kp SEMICOLON     &kp AMPERSAND  &kp SINGLE_QUOTE  &kp QUESTION  &kp PERCENT      &kp KP_DOT  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans        &kp KP_COMMA
-&trans           &trans            &trans         &trans            &trans        &trans           &trans      &kp KP_NUMBER_0                                                  &kp KP_ENTER
+&kp EXCLAMATION  &kp LS(NUMBER_2)  &kp LS(N8)        &kp LS(N9)        &kp PERIOD                                 &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &kp KP_SLASH
+&kp SLASH        &kp MINUS         &kp LS(MINUS)     &kp AT            &kp COMMA     &none            &kp HASH    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp KP_ASTERISK
+&kp BACKSLASH    &kp SEMICOLON     &kp LS(NUMBER_6)  &kp SINGLE_QUOTE  &kp QUESTION  &kp PERCENT      &kp KP_DOT  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans        &kp KP_COMMA
+&trans           &trans            &trans            &trans            &trans        &trans           &trans      &kp KP_NUMBER_0                                                  &kp KP_ENTER
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
