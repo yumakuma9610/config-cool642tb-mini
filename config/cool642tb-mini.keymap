@@ -53,7 +53,7 @@
         tax: tax {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(MINUS) &kp G &kp N6 &kp KP_ASTERISK &kp LS(N8) &kp N1 &kp LS(EQUAL) &kp K &kp N6 &kp LS(N9)>;
+            bindings = <&kp LS(MINUS) &kp G &kp N6 &kp KP_ASTERISK &kp LS(N8) &kp N1 &kp KP_PLUS &kp K &kp N6 &kp LS(N9)>;
             label = "TAX";
         };
 
