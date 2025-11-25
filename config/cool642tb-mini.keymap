@@ -53,7 +53,7 @@
         tax: tax {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(MINUS) &kp G &kp N6 &kp STAR &kp LS(N8) &kp N1 &kp PLUS &kp K &kp N6 &kp LS(N9)>;
+            bindings = <&kp LS(MINUS) &kp G &kp N6 &kp KP_ASTERISK &kp LS(N8) &kp N1 &kp LS(EQUAL) &kp K &kp N6 &kp LS(N9)>;
             label = "TAX";
         };
 
@@ -151,10 +151,10 @@
 
         ARROW {
             bindings = <
-&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                          &kp LS(NUMBER_6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)
-&trans            &trans            &trans            &trans            &trans      &trans      &bt BT_CLR  &trans            &trans      &trans      &trans      &trans
-&trans            &trans            &trans            &trans            &trans      &trans      &trans      &trans            &trans      &trans      &trans      &trans
-&trans            &trans            &trans            &trans            &trans      &trans      &trans      &trans                                                &none
+&kp LS(GRAVE)  &kp LS(BACKSLASH)  &kp LS(SLASH)  &kp LS(COMMA)  &kp LS(PERIOD)                          &kp LS(RIGHT_BRACKET)  &kp LS(LEFT_BRACKET)  &kp LS(SEMI)  &kp UNDERSCORE  &kp LS(NON_US_HASH)
+&trans         &trans             &trans         &trans         &trans          &trans      &bt BT_CLR  &trans                 &trans                &trans        &trans          &trans
+&trans         &trans             &trans         &trans         &trans          &trans      &trans      &trans                 &trans                &trans        &trans          &trans
+&trans         &trans             &trans         &trans         &trans          &trans      &trans      &trans                                                                     &none
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
