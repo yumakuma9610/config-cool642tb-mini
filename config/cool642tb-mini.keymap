@@ -130,7 +130,7 @@
         number {
             bindings = <
 &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERIOD                                 &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &kp KP_SLASH
-&kp SLASH        &kp MINUS          &kp EQUAL             &kp AT_SIGN            &kp COMMA     &none            &kp HASH    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp KP_ASTERISK
+&kp SLASH        &kp UNDER          &kp EQUAL             &kp AT_SIGN            &kp COMMA     &none            &kp HASH    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp KP_ASTERISK
 &kp LESS_THAN    &kp GREATER_THAN   &kp AMPERSAND         &kp COLON              &kp QUESTION  &kp PERCENT      &kp KP_DOT  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans        &kp KP_COMMA
 &trans           &trans             &trans                &trans                 &trans        &trans           &trans      &kp KP_NUMBER_0                                                  &kp KP_ENTER
             >;
@@ -142,7 +142,7 @@
             bindings = <
 &kp LG(L)        &kp F4     &kp F5         &kp F8    &kp F10                          &kp LC(F)  &kp LC(X)  &kp LC(NUMBER_1)  &kp LC(PLUS)   &kp LC(UP)
 &kp LA(LC(DEL))  &kp LG(D)  &kp LG(LS(C))  &kp LGUI  &address  &none       &XLUP      &kp LC(T)  &kp LC(C)  &IF               &kp LC(LA(Q))  &kp LC(DOWN)
-&none            &yyyymmdd  &tax           &kp X     &none     &none       &kp LC(Y)  &kp LC(Z)  &kp LC(V)  &none             &none          &none
+&none            &yyyymmdd  &tax           &none     &none     &none       &kp LC(Y)  &kp LC(Z)  &kp LC(V)  &none             &none          &none
 &none            &trans     &trans         &trans    &trans    &trans      &trans     &trans                                                 &none
             >;
 
