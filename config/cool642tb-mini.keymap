@@ -171,6 +171,15 @@
             sensor-bindings = <&encoder_msc_down_up>;
         };
 
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
+        };
+
         /* --------------------------
          * LAYER 5 (SCROLL)
          * -------------------------- */
